@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+
+    <a href="{% url 'youtube' %}" class="btn btn-primary">Youtube!</a>
+    <a href="{% url 'instagram' %}" class="btn btn-primary">Instagram!</a>
+    <a href="{% url 'twitter' %}" class="btn btn-primary">Twitter!</a>
+
+{% endblock %}

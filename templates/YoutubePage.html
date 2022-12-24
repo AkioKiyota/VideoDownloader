@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Youtube Page {% endblock %}
+
+
+{% block content %}
+
+    <p>Youtube Page</p>
+    <br>
+    <hr>
+
+    <form action="{% url "youtube" %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Download">
+    </form>
+
+{% endblock %}
